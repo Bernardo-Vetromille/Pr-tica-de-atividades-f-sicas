@@ -1,0 +1,77 @@
+:root {
+  --cor-verde: #27AE60;      /* Saúde, natureza, equilíbrio */
+  --cor-azul: #56CCF2;       /* Calma, confiança */
+  --cor-laranja: #F2994A;    /* Energia, motivação */
+  --cor-cinza-claro: #F2F2F2; /* Fundo suave */
+  --cor-branco: #FFFFFF;     /* Fundo e contraste */
+  --cor-texto: #333333;      /* Texto principal */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--cor-cinza-claro);
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 80vw;
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    gap: 2rem;
+
+    margin: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0px;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0,0,0,0.4);
+
+    background: var(--cor-branco);
+}
+
+h1 {
+    margin: 1rem;
+}
+
+h2 {
+    background: var(--cor-azul);
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 1rem;
+
+    color: var(--cor-cinza-claro);
+
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.caixa-de-texto {
+    width: 1fr;
+    height: 1fr;
+    background: var(--cor-verde);
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.4);
+}
+
+p {
+    color: var(--cor-texto);
+
+    padding: 1rem;
+
+    font-size: 20px;
+}
+
+strong {
+    color: var(--cor-laranja);
+}
